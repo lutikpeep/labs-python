@@ -1,0 +1,60 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Центрируем логотип */
+.header img {
+    display: block;
+    width: 318px;
+    margin: 0 auto;
+}
+
+/* Ссылка "Все статьи" справа вверху */
+.all-posts-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Ограничиваем ширину контента */
+.archive, .content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Стили для заголовков статей в архиве */
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Выравнивание автора и даты в одну строку */
+.article-info {
+    overflow: hidden; /* чтобы блок не схлопывался */
+    margin-bottom: 15px;
+}
+.article-author {
+    width: 50%;
+    float: left;
+}
+.article-created-date {
+    text-align: right;
+}
+
+/* Отступы для текста */
+.article-text {
+    line-height: 1.5;
+}
