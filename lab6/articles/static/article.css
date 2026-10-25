@@ -1,0 +1,153 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+    max-width: 960px; /* Ограничиваем ширину шапки */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Центрируем логотип */
+.header img {
+    display: block;
+    width: 318px;
+    margin: 0 auto;
+}
+
+/* Ссылка "Все статьи" справа вверху */
+.all-posts-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Ограничиваем ширину контента */
+.archive, .content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Стили для заголовков статей в архиве */
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Выравнивание автора и даты в одну строку */
+.article-info {
+    overflow: hidden; /* чтобы блок не схлопывался */
+    margin-bottom: 15px;
+}
+.article-author {
+    width: 50%;
+    float: left;
+}
+.article-created-date {
+    text-align: right;
+}
+
+/* Отступы для текста */
+.article-text {
+    line-height: 1.5;
+}
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px !important;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-container textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #ffffff;
+    color: #1abc9c;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 10px !important; /* Принудительное закругление кнопки */
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.submit-btn:hover {
+    background: #e0e0e0;
+}
+
+.error-msg {
+    color: #ff3333 !important; /* Яркий красный */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Стили для списка ошибок Django */
+.error-msg ul,
+.errorlist {
+    color: #ff3333 !important;
+    font-weight: bold;
+    list-style: none; /* Убираем точки списка */
+    padding-left: 0;
+}
+
+.back-link {
+    color: #ffffff !important;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.auth-links {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1); /* Светлая полупрозрачная заливка */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.auth-links a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.auth-links a:hover {
+    text-decoration: none;
+}
