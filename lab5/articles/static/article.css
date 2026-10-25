@@ -61,7 +61,7 @@ body {
 .form-container {
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 10px !important;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -69,12 +69,18 @@ body {
 .form-container input[type="text"],
 .form-container textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px !important;
     box-sizing: border-box;
     font-family: inherit;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .form-container textarea {
@@ -86,25 +92,36 @@ body {
     background: #ffffff;
     color: #1abc9c;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px !important; /* Принудительное закругление кнопки */
     cursor: pointer;
     font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
 }
-
 .submit-btn:hover {
     background: #e0e0e0;
 }
 
 .error-msg {
-    color: #ffcccc;
+    color: #ff3333 !important; /* Яркий красный */
     font-weight: bold;
     margin-top: 15px;
 }
 
+/* Стили для списка ошибок Django */
+.error-msg ul,
+.errorlist {
+    color: #ff3333 !important;
+    font-weight: bold;
+    list-style: none; /* Убираем точки списка */
+    padding-left: 0;
+}
+
 .back-link {
-    color: #ffffff;
+    color: #ffffff !important;
+    text-decoration: underline;
     display: inline-block;
     margin-top: 20px;
 }
