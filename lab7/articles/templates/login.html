@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вход</title>
+    <link rel="stylesheet" href="{% static 'article.css' %}">
+</head>
+<body class="content">
+    <div class="form-container">
+        <h1>Вход в систему</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div><input type="text" name="username" placeholder="Логин"></div>
+            <div><input type="password" name="password" placeholder="Пароль"></div>
+            <input type="submit" value="Войти" class="submit-btn">
+        </form>
+        <p class="error-msg">{{ error }}</p>
+        <br>
+        <a href="{% url 'archive' %}" class="back-link">← На главную</a>
+    </div>
+</body>
+</html>
