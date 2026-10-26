@@ -52,3 +52,13 @@ var filterByAverage = function(minAvg) {
 
 // Выводим всех студентов
 printStudents(groupmates);
+
+var selectedGroup = prompt("Введите группу для фильтрации:");
+if (selectedGroup) {
+    filterByGroup(selectedGroup);
+}
+
+var minAverage = parseFloat(prompt("Введите минимальный средний балл:"));
+if (!isNaN(minAverage)) {
+    filterByAverage(minAverage);
+}
